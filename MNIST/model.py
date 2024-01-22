@@ -38,6 +38,7 @@ class ImageClassifier(nn.Module):
                  hidden_sizes=[500, 400, 300, 200, 100],
                  use_batch_norm = True,
                  dropout_p=.3):
+        
         super().__init__()
 
         assert len(hidden_sizes) > 0, 'You need to specify hidden layers' # hidden size가 0이상이 아니면 에러메세지를 뱉음.
